@@ -39,7 +39,7 @@ export const PlayingCard = ({ rank, suit, hidden = false, random = false }: Play
     <div
       className={`flex select-none h-48 w-30 flex-col items-center justify-center rounded-lg border-2 bg-card ${colorClass}`}
     >
-      {!hidden && <span className="text-2xl font-serif font-semibold">{displayRank}</span>}
+      {!hidden && <span className="text-2xl font-semibold">{displayRank}</span>}
 
       <div className="flex flex-col items-center space-y-4 font-display">
         {symbolClasses.map((cls) => (
@@ -49,7 +49,7 @@ export const PlayingCard = ({ rank, suit, hidden = false, random = false }: Play
         ))}
       </div>
 
-      {!hidden && <span className="rotate-180 text-2xl font-serif font-semibold">{displayRank}</span>}
+      {!hidden && <span className="rotate-180 text-2xl font-semibold">{displayRank}</span>}
     </div>
   );
 };

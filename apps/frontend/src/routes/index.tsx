@@ -13,9 +13,7 @@ function IndexPage() {
     <section className="relative flex min-h-screen flex-col items-center justify-center">
       <div className="space-y-4 text-center">
         <h1 className="uppercase font-display text-7xl md:text-8xl font-bold tracking-wider text-foreground">Mytho</h1>
-        <p className="font-serif text-lg md:text-xl text-muted-foreground tracking-widest uppercase">
-          Le jeu du menteur
-        </p>
+        <p className="text-lg md:text-xl text-muted-foreground tracking-widest uppercase">Le jeu du menteur</p>
       </div>
 
       <div className="my-16">
@@ -36,7 +34,7 @@ function IndexPage() {
       </div>
 
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-        <p className="font-serif text-muted-foreground/60 tracking-widest">Un duel de mensonges et de vérités</p>
+        <p className="text-muted-foreground/60 tracking-widest">Un duel de mensonges et de vérités</p>
       </div>
 
       <CornerDecoration className="absolute top-4 left-4" />
