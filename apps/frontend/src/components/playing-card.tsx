@@ -37,11 +37,11 @@ export const PlayingCard = ({ rank, suit, hidden = false, random = false }: Play
 
   return (
     <div
-      className={`flex select-none h-48 w-30 flex-col items-center justify-center rounded-lg border-2 bg-card ${colorClass}`}
+      className={`bg-card flex h-48 w-30 flex-col items-center justify-center rounded-lg border-2 select-none ${colorClass}`}
     >
       {!hidden && <span className="text-2xl font-semibold">{displayRank}</span>}
 
-      <div className="flex flex-col items-center space-y-4 font-display">
+      <div className="font-display flex flex-col items-center space-y-4">
         {symbolClasses.map((cls) => (
           <span key={cls} className={`${cls} ${hidden ? "font-bold" : "font-normal"}`}>
             {symbol}
@@ -81,7 +81,7 @@ export const StackedCards = ({ children, spacing = 14, verticalSpacing = 2 }: St
         return (
           <div
             key={card.key ?? `card-${index}`}
-            className="absolute left-0 top-0 origin-bottom-left opacity-96"
+            className="absolute top-0 left-0 origin-bottom-left opacity-96"
             style={{
               zIndex: index + 1,
               transform: `translate(${offsetX}px, ${offsetY}px) rotate(${rotation}deg)`,

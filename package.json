@@ -1,22 +1,23 @@
 {
   "name": "mytho",
-  "license": "MIT",
   "private": true,
+  "license": "MIT",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "dev": "bun run --parallel --workspaces --elide-lines 0 --if-present dev",
     "build": "bun run --sequential --workspaces --if-present build",
-    "typecheck": "bun run --workspaces --if-present typecheck",
+    "dev": "bun run --parallel --workspaces --elide-lines 0 --if-present dev",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "lint": "oxlint . --deny-warnings",
     "lint:github": "oxlint . --format=github --deny-warnings",
-    "format:check": "prettier . --check"
+    "typecheck": "bun run --workspaces --if-present typecheck"
   },
   "devDependencies": {
+    "oxfmt": "^0.41.0",
     "oxlint": "^1.56.0",
-    "prettier": "^3.8.1",
     "typescript": "~5.9.3"
   }
 }
