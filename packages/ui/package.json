@@ -6,7 +6,8 @@
   "exports": {
     "./lib/*": "./src/lib/*.ts",
     "./components/*": "./src/components/*.tsx",
-    "./styles/*": "./src/styles/*.tsx"
+    "./hooks/*": "./src/hooks/*.tsx",
+    "./globals.css": "./src/globals.css"
   },
   "scripts": {
     "typecheck": "bunx --bun tsc --noEmit -p tsconfig.json"
