@@ -17,7 +17,7 @@ const buttonVariants = cva(
           "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
-        link: "text-primary underline-offset-4 hover:underline",
+        link: "text-foreground underline-offset-4 hover:underline",
       },
       size: {
         default: "h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
@@ -48,3 +48,43 @@ function Button({
 }
 
 export { Button, buttonVariants };
+
+// import { cva, type VariantProps } from "class-variance-authority";
+// import { type ComponentPropsWithoutRef } from "react";
+
+// export const buttonVariants = cva(
+//   "group font-heading relative inline-flex items-center justify-center overflow-hidden rounded-sm font-medium tracking-widest uppercase transition-all duration-300 disabled:pointer-events-none disabled:opacity-50",
+//   {
+//     variants: {
+//       variant: {
+//         default: "border-primary bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground border-2",
+//         outline:
+//           "border-border bg-card/50 text-foreground hover:border-accent hover:bg-accent/10 hover:text-accent border",
+//         link: "text-muted-foreground hover:underline",
+//       },
+//       size: {
+//         sm: "px-6 py-2 text-base",
+//         md: "px-10 py-3 text-lg",
+//         lg: "px-12 py-4 text-xl",
+//       },
+//     },
+//     defaultVariants: {
+//       variant: "default",
+//       size: "md",
+//     },
+//   },
+// );
+
+// type ButtonProps = ComponentPropsWithoutRef<"button"> & VariantProps<typeof buttonVariants>;
+
+// export const Button = ({ className, variant, size, children, ...props }: ButtonProps) => {
+//   return (
+//     <button
+//       data-slot="button"
+//       className={[buttonVariants({ variant, size }), className].filter(Boolean).join(" ")}
+//       {...props}
+//     >
+//       <span className="relative z-10">{children}</span>
+//     </button>
+//   );
+// };

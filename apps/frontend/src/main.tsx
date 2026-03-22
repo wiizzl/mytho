@@ -1,4 +1,4 @@
-import "@mytho/ui/index.css";
+import "../../../packages/ui/src/styles/globals.css";
 
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { StrictMode } from "react";

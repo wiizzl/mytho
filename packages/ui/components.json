@@ -11,13 +11,14 @@
   },
   "iconLibrary": "lucide",
   "aliases": {
-    "components": "@mytho/ui/components",
-    "utils": "@mytho/ui/lib/utils",
-    "hooks": "@mytho/ui/hooks",
-    "lib": "@mytho/ui/lib",
-    "ui": "@mytho/ui/components"
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "hooks": "@/hooks",
+    "lib": "@/lib",
+    "ui": "@/components"
   },
   "rtl": false,
   "menuColor": "default",
-  "menuAccent": "subtle"
+  "menuAccent": "subtle",
+  "registries": {}
 }

@@ -24,10 +24,8 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@mytho/ui/*": ["../../packages/ui/src/*"],
-      "@mytho/ui": ["../../packages/ui/src"],
-    },
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src"]
 }

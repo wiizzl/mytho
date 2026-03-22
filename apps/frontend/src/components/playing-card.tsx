@@ -41,7 +41,7 @@ export const PlayingCard = ({ rank, suit, hidden = false, random = false }: Play
     >
       {!hidden && <span className="text-2xl font-semibold">{displayRank}</span>}
 
-      <div className="font-display flex flex-col items-center space-y-4">
+      <div className="font-heading flex flex-col items-center space-y-4">
         {symbolClasses.map((cls) => (
           <span key={cls} className={`${cls} ${hidden ? "font-bold" : "font-normal"}`}>
             {symbol}

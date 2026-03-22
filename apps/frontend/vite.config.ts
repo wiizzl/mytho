@@ -1,4 +1,3 @@
-import { resolve } from "path";
 import { defineConfig } from "vite";
 
 import tailwindcss from "@tailwindcss/vite";
@@ -15,10 +14,6 @@ export default defineConfig({
     tailwindcss(),
   ],
   resolve: {
-    alias: {
-      "@": resolve(__dirname, "./src"),
-      "@mytho/ui": resolve(__dirname, "../../packages/ui/src"),
-      "@mytho/shared": resolve(__dirname, "../../packages/shared/src"),
-    },
+    tsconfigPaths: true,
   },
 });
