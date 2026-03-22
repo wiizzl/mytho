@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@mytho/ui/lib/utils";
 
 type AppShrowdProps = {
   children: React.ReactNode;

@@ -4,7 +4,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
-    }
-  }
+      "@/*": ["src/*"],
+      "@mytho/ui/*": ["../../packages/ui/src/*"],
+      "@mytho/ui": ["../../packages/ui/src"],
+    },
+  },
 }

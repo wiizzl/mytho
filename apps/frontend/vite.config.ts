@@ -17,6 +17,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
+      "@mytho/ui": resolve(__dirname, "../../packages/ui/src"),
+      "@mytho/shared": resolve(__dirname, "../../packages/shared/src"),
     },
   },
 });
