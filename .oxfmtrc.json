@@ -14,7 +14,7 @@
     "sortScripts": true
   },
   "sortTailwindcss": {
-    "functions": ["cva", "clsx", "cn"]
+    "functions": ["cva", "cn"]
   },
   "ignorePatterns": ["apps/frontend/src/routeTree.gen.ts"]
 }

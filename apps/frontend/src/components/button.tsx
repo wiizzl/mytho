@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { type ComponentPropsWithoutRef } from "react";
 
-const buttonVariants = cva(
+export const buttonVariants = cva(
   "group font-display relative inline-flex items-center justify-center overflow-hidden rounded-sm font-medium tracking-widest uppercase transition-all duration-300 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
@@ -26,7 +26,7 @@ const buttonVariants = cva(
 
 type ButtonProps = ComponentPropsWithoutRef<"button"> & VariantProps<typeof buttonVariants>;
 
-function Button({ className, variant, size, children, ...props }: ButtonProps) {
+export const Button = ({ className, variant, size, children, ...props }: ButtonProps) => {
   return (
     <button
       data-slot="button"
@@ -36,6 +36,4 @@ function Button({ className, variant, size, children, ...props }: ButtonProps) {
       <span className="relative z-10">{children}</span>
     </button>
   );
-}
-
-export { Button, buttonVariants };
+};
