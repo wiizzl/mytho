@@ -8,21 +8,21 @@
     "style": "off",
     "pedantic": "off",
     "nursery": "off",
-    "restriction": "off"
+    "restriction": "off",
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/no-array-index-key": "off",
-    "import/no-unassigned-import": "off"
+    "import/no-unassigned-import": "off",
   },
   "settings": {
     "react": {
-      "version": "19.2.4"
-    }
+      "version": "19.2.4",
+    },
   },
   "env": {
-    "builtin": true
+    "builtin": true,
   },
   "globals": {},
-  "ignorePatterns": ["apps/frontend/src/routeTree.gen.ts"]
+  "ignorePatterns": ["apps/web/src/routeTree.gen.ts"],
 }

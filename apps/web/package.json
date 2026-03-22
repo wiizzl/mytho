@@ -1,5 +1,5 @@
 {
-  "name": "@mytho/frontend",
+  "name": "@mytho/web",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -20,7 +20,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@mytho/backend": "workspace:*",
+    "@mytho/server": "workspace:*",
     "@tailwindcss/vite": "^4.2.2",
     "@tanstack/router-plugin": "^1.167.3",
     "@types/node": "^24.12.0",

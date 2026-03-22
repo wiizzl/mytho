@@ -19,6 +19,6 @@ const app = new Elysia()
   .use(gameHandler)
   .listen(env.PORT);
 
-export type App = typeof app;
+export type Server = typeof app;
 
 console.log(`Elysia is ready : http://${app.server?.hostname}:${app.server?.port}`);

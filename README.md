@@ -18,8 +18,8 @@ bun run dev
 Create env files from examples:
 
 ```sh
-cp apps/backend/.env.example apps/backend/.env
-cp apps/frontend/.env.example apps/frontend/.env
+cp apps/server/.env.example apps/server/.env
+cp apps/web/.env.example apps/web/.env
 ```
 
 Both apps validate env values with Zod at startup.
