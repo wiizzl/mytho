@@ -1,9 +1,8 @@
+import { SharedEnvSchema } from "@mytho/shared";
 import { z } from "zod";
 
-const EnvSchema = z.object({
+const EnvSchema = SharedEnvSchema.extend({
   PORT: z.coerce.number().int().positive().default(3000),
-
-  NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
 });
 
 export const env = EnvSchema.parse(Bun.env);
