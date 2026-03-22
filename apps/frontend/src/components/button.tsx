@@ -9,6 +9,7 @@ const buttonVariants = cva(
         default: "border-primary bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground border-2",
         outline:
           "border-border bg-card/50 text-foreground hover:border-accent hover:bg-accent/10 hover:text-accent border",
+        link: "text-muted-foreground hover:underline",
       },
       size: {
         sm: "px-6 py-2 text-base",

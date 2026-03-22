@@ -12,7 +12,7 @@ function IndexPage() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center">
       <div className="space-y-4 text-center">
-        <h1 className="font-display text-foreground text-7xl font-bold tracking-wider uppercase md:text-8xl">Mytho</h1>
+        <h1 className="font-display text-7xl font-bold tracking-wider uppercase md:text-8xl">Mytho</h1>
         <p className="text-muted-foreground text-lg tracking-widest uppercase md:text-xl">Le jeu du menteur</p>
       </div>
 

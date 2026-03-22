@@ -32,7 +32,7 @@ export const PlayingCard = ({ rank, suit, hidden = false, random = false }: Play
   const displaySuit = random ? GAME_RULES.SUITS[Math.floor(Math.random() * GAME_RULES.SUITS.length)].name : suit!;
 
   const symbol = hidden ? "M" : suitSymbols[displaySuit];
-  const colorClass = hidden ? "" : suitColors[displaySuit];
+  const colorClass = hidden ? "text-foreground" : suitColors[displaySuit];
   const symbolClasses = hidden ? ["text-3xl"] : ["text-sm", "text-3xl", "text-sm rotate-180"];
 
   return (
