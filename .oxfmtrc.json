@@ -11,10 +11,10 @@
   "arrowParens": "always",
   "endOfLine": "lf",
   "sortPackageJson": {
-    "sortScripts": true,
+    "sortScripts": true
   },
   "sortTailwindcss": {
-    "functions": ["cva", "cn"],
+    "functions": ["cva", "cn"]
   },
-  "ignorePatterns": ["apps/web/src/routeTree.gen.ts"],
+  "ignorePatterns": ["apps/web/src/routeTree.gen.ts"]
 }
