@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { CornerDecorations } from "@/components/corder-decoration";
 import { PlayingCard, StackedCards } from "@/components/playing-card";
-import { buttonVariants } from "@mytho/ui/components/button";
+import { Button } from "@mytho/ui/components/button";
 
 export const Route = createFileRoute("/")({
   component: IndexPage,
@@ -25,12 +25,12 @@ function IndexPage() {
       </div>
 
       <div className="flex flex-col items-center space-y-4">
-        <Link to="/room" className={buttonVariants({ size: "lg" })}>
+        <Button size="lg" render={<Link to="/room" />} nativeButton={false}>
           Jouer
-        </Link>
-        <Link to="/room" search={{ join: true }} className={buttonVariants({ variant: "outline", size: "lg" })}>
+        </Button>
+        <Button variant="outline" render={<Link to="/room" search={{ join: true }} />} nativeButton={false}>
           Rejoindre
-        </Link>
+        </Button>
       </div>
 
       <CornerDecorations />

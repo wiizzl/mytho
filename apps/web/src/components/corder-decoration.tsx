@@ -17,7 +17,9 @@ export const CornerDecorations = () => {
   return (
     <>
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-        <p className="text-muted-foreground/60 tracking-widest">Un duel de mensonges et de vérités</p>
+        <p className="text-muted-foreground/60 text-center text-xs tracking-widest sm:text-sm md:text-base">
+          Un duel de mensonges et de vérités...
+        </p>
       </div>
 
       <CornerDecoration className="absolute top-4 left-4" />
