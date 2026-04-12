@@ -18,17 +18,16 @@
     "@fontsource/crimson-text": "^5.2.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "shadcn": "^4.1.0",
+    "shadcn": "^4.2.0",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "tailwindcss": "^4.2.2"
+    "@types/react-dom": "^19.2.3"
   },
   "peerDependencies": {
-    "lucide-react": "^1.0.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "lucide-react": "^1.8.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   }
 }
